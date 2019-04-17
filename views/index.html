@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {# Head bloke bus dedami visi SEO head elementai #}
+    {% block head %}
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="text-center">
+        <div class="bg-dark" style="background-color:#A7A6; overflow: auto;" class="clear_fix">
+            <div class="container">
+                <font face="Lobster"><h3>Fuel your style</h3></font> <img src="https://findicons.com/files/icons/2219/dot_pictograms/128/air_plane_airport_2.png" alt="Lektuvėlis" height="50" width="50"/> <img src="http://cdn.onlinewebfonts.com/svg/img_446993.png" alt="Kanistro paveiksliukas Juoda Balta" height="50" width="50"/>
+                <br>
+            </div>
+        </div>
+        <nav>
+            <br>
+            <ul class="list-inline">
+                <li><a href="/">Namai</a></li>
+                <li><a href="/aboutus">Apie mus</a></li>
+                <li><a href="/products">Mūsų produktai</a></li>
+                <li><a href="/media">Medija ir kontaktai</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    {% block body %}
+    {% endblock %}
+    {% block footer %}
+    <footer class="text-center">
+        <hr>
+        <p class="muted">App running on port: <code>{{ port }}</code></p>
+    </footer>
+    {% endblock %}
+</body>
+</html>
